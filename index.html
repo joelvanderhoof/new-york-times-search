@@ -3,78 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Untitled</title>
+  <title>New York Times Article Search</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 </head>
 <body>
-
-
-<div class="jumbotron">
-  <h1>New York Times Search</h1>
-  <p>...</p>
-  
-</div>
-
-<div class= "container"> 
-
-  <div class="panel panel-default"> 
-
-
-
-<div class= "panel-heading">Search Parameters</div>
-  
+  <div class= "container">
     <div class="row">
-  
-  <div class="col-med-6">Search Term <br>
-    <div class="input-group">
-      <span class="input-group-btn">
-        </span>
-    <input type="text" id="search-term" class="form-control" placeholder="Search for...">
-    
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-med-6"> Number of Records <br>
-    <div class="input-group">
-      <input id="records" type="number" min="1" class="form-control" placeholder="Search for...">
+      <div class="jumbotron">
+        <h1><span class="fa fa-newspaper-o"></span>New York Times Article Search</h1>
       </div>
-      </div>
-      
-      <div class="col-med-6"> Start Year (Optional)
-    <div class="input-group">
-      <span class="input-group-btn">
-       </span>
-      <input type="number" id="start-year" min="1900" max="2017" class="form-control" placeholder="Search for...">
-      
-      <div class="col-med-6"> End Year (Optional)
-    <div class="input-group">
-      <span class="input-group-btn">
-       </span>
-       <input type="number" id="end-year" max="2017" class="form-control" placeholder="Search for...">
+    </div>
 
+    <div class="row">
+      <div class="panel panel-default"> 
+        <div class= "panel-heading"><span class="fa fa-list-alt"></span>Search Parameters</div>
+        <div class="panel-body">
+          <div class="form-group">
+            <label for="searchterm">Search Term</label>
+            <input type="text" id="searchterm" class="form-control" placeholder="Article..." value="">
+          </div>
+          <div class="form-group">
+            <label for="records">Number of Records to Retrieve</label>
+            <input id="records" type="number" min="1" max="99" class="form-control" value="1">
+          </div>
+          <div class="form-group">
+            <label for="startyear">Start Year (Optional)</label>
+            <input type="number" id="startyear" min="1900" max="2017" class="form-control" placeholder="YYYY" value="">
+          </div>
+          <div class="form-group">
+            <label for="endyear">End Year (Optional)</label>
+            <input type="number" id="endyear" min="1900" max="2017" class="form-control" placeholder="YYYY" value="">
+          </div>
+          <div class="form-group">
+            <button id ="search-button" class="btn btn-default" type="button"><span class="fa fa-search"></span> Search</button>
+            <button id ="clear-results" class="btn btn-default" type="button"><span class="fa fa-trash"></span>Clear Results</button>
+          </div>
+        </div> <!-- panel body -->
+      </div> <!-- panel -->
+    </div> <!-- row -->
 
-      <span class="input-group-btn">
-        <button id ="search-button" class="btn btn-default" type="button">Search</button>
-        <button id ="clear-results" class="btn btn-default" type="button">Clear Results</button>
-      
-
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /ipnut group end year-->
-</div><!-- /startyear.input group -->
-
-</div> <!-- start year -->
-</div> <!-- row -->
-
-</div>
-</div> <!-- container -->
- 
-
-</div>
-    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <div class="row">
+      <div class="panel panel-default"> 
+        <div class= "panel-heading"><span class="fa fa-table"></span>Top Articles <font id="showpage" class="pull-right">Page no. <span id="pageno"></span></font></div>
+        <div class="panel-body">
+          <div id="searchresult"></div>
+          <div id="navbtn" class="form-group">
+            <button id ="prevpage" class="btn btn-default" type="button"><span class="fa fa-backward"></span>Prev. Page</button>     
+            <button id ="nextpage" class="btn btn-default" type="button"><span class="fa fa-forward"></span>Next Page</button>
+          </div>
+        </div>
+      </div> <!-- panel -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
-
