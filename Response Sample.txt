@@ -1,0 +1,42 @@
+{
+  "response": {
+    "meta": {
+      "hits": 16115367,
+      "time": 137,
+      "offset": 0
+    },
+    "docs": [
+      {
+        "web_url": "https://www.nytimes.com/aponline/2017/04/22/world/europe/ap-eu-france-election-the-latest.html",
+        "snippet": "The Latest on France's presidential race (all times local):...",
+        "lead_paragraph": "The Latest on France's presidential race (all times local):",
+        "abstract": null,
+        "print_page": 0,
+        "blog": [],
+        "source": "AP",
+        "multimedia": [],
+        "headline": {
+          "main": "The Latest: French Campaigns Halt Prior to Presidential Vote",
+          "print_headline": "The Latest: French Campaigns Halt Prior to Presidential Vote"
+        },
+        "keywords": [],
+        "pub_date": "2017-04-22T20:00:48+0000",
+        "document_type": "article",
+        "news_desk": "None",
+        "section_name": "World",
+        "subsection_name": "Europe",
+        "byline": {
+          "person": [],
+          "original": "By THE ASSOCIATED PRESS",
+          "organization": "THE ASSOCIATED PRESS"
+        },
+        "type_of_material": "News",
+        "_id": "58fbb67a7c459f24986db8eb",
+        "word_count": 760,
+        "slideshow_credits": null
+      }
+     ]
+  },
+  "status": "OK",
+  "copyright": "Copyright (c) 2013 The New York Times Company.  All Rights Reserved."
+}
