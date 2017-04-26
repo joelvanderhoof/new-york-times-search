@@ -63,6 +63,12 @@ $(window).on('load', function () {
 
 	$('#clear-results').click(function(){
 		$('#searchresult').empty();
+		$('#searchterm').val(''),
+	  $('#records').val('1'),
+	  $('#startyear').val(''),
+	  $('#endyear').val('');
+		$('#navbtn').css('display','none');
+		$('#showpage').css('display','none');		
 	});
 
 	$('#startyear').change(function(){
